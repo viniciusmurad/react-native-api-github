@@ -79,7 +79,7 @@ export default class Main extends Component {
                     <Input
                         autoCorrect={false}
                         autoCapitalize="none"
-                        placeholder="Adicionar usuário"
+                        placeholder="Add a user"
                         value={newUser}
                         onChangeText={text => this.setState({ newUser: text })}
                         returnKeyType="send"
@@ -109,7 +109,7 @@ export default class Main extends Component {
                                 onPress={() => this.handleNavigate(item)}
                             >
                                 <ProfileButtonText>
-                                    Ver perfil
+                                    View profile
                                 </ProfileButtonText>
                             </ProfileButton>
                         </User>
@@ -121,7 +121,7 @@ export default class Main extends Component {
 }
 
 Main.navigationOptions = {
-    title: 'Usuários',
+    title: 'Users',
 };
 
 Main.propTypes = {
